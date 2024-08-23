@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.quote-section {
+  background: url(assets/bg.jpg);
+  height: 100vh;
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-heading {
+  color: white;
+  text-align: center;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1)
+  );
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.2em;
+  font-weight: 500;
+  font-size: 26px;
+  border-radius: 15px;
+}
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 1rem auto;
+  text-align: center;
+  width: 400px;
+  height: 200px;
+  padding: 1.1rem;
+  border-radius: 20px;
+  background: linear-gradient(to bottom, #2b2b2b, #000000);
+}
+.quote-box p {
+  color: white;
+}
+.quote-box a {
+  display: flex;
+  margin: 0 auto;
+  text-decoration: none;
+  color: black;
+  background: white;
+  border-radius: 5px;
+  width: fit-content;
+  padding: 0.2rem;
+  cursor: pointer;
+  outline: none;
+}
+.person-quote {
+  margin-top: 0.5rem;
+}
+.button {
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.3rem;
+}
+
+/* mobile  responsive */
+@media (320px <= width <= 768px) {
+  .quote-container {
+    width: 100%;
+  }
+}
